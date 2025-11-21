@@ -1,0 +1,110 @@
+<!-- =======================
+     GUAVA — Profile Page (profile.html)
+     Gen‑Z Dark Theme • Same Design System as Home & Explore
+     ======================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guava — Profile</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR (Same as Explore & Home) ================= -->
+  <nav>
+    <div class="nav-logo">GUAVA</div>
+
+    <div class="nav-search">
+      <input type="text" placeholder="Search Guava..." />
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="#">Notifications</a>
+      <a href="profile.html" style="color:#8BFF76;font-weight:600;">Profile</a>
+    </div>
+  </nav>
+
+  <!-- ================= PROFILE HEADER ================= -->
+  <section class="profile-header">
+    <div class="profile-banner"></div>
+
+    <div class="profile-info">
+      <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-pic" />
+
+      <h2 class="profile-name">John Doe</h2>
+      <p class="profile-username">@johndoe</p>
+      <p class="profile-bio">Tech enthusiast • AI learner • Sharing knowledge one post at a time.</p>
+
+      <button class="edit-btn">Edit Profile</button>
+    </div>
+  </section>
+
+  <!-- ================= PROFILE CONTENT (Left + Right Layout) ================= -->
+  <section class="profile-main">
+
+    <!-- LEFT SECTION — User Details -->
+    <aside class="profile-left">
+      <div class="info-card">
+        <h3>About</h3>
+        <p>Computer Science Student at NST</p>
+        <p>Based in Bangalore, India</p>
+        <p>Joined: March 2025</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Skills</h3>
+        <ul>
+          <li>Python</li>
+          <li>AI & ML Basics</li>
+          <li>Frontend Development</li>
+          <li>Public Speaking</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- RIGHT SECTION — User Posts -->
+    <div class="profile-feed">
+
+      <h3 class="feed-title">Posts by John</h3>
+
+      <div class="post-card">
+        <h4 class="post-title">How I started learning AI in college</h4>
+        <p class="post-desc">Beginning AI felt overwhelming, but breaking things into small steps helped...</p>
+        <p class="post-date">2 days ago</p>
+      </div>
+
+      <div class="post-card">
+        <h4 class="post-title">Why consistency beats talent</h4>
+        <p class="post-desc">Most people fail not because they lack talent, but because they quit too early...</p>
+        <p class="post-date">1 week ago</p>
+      </div>
+
+      <div class="post-card">
+        <h4 class="post-title">Top 3 books every student should read</h4>
+        <p class="post-desc">These books helped me change my mindset, improve focus and understand life better...</p>
+        <p class="post-date">3 weeks ago</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Guava — Designed for minimalism & clarity.</p>
+  </footer>
+
+</body>
+</html>
