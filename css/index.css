@@ -204,5 +204,56 @@ footer p {
   .left-sidebar,
   .right-sidebar {
     display: none;
+    color:#8BFF76
   }
 }
+
+/* Breakpoint 3: mobile phones */
+@media (max-width: 600px) {
+nav {
+padding: 10px 14px;
+align-items: flex-start;
+flex-direction: column;
+gap: 10px;
+}
+
+
+.nav-logo {
+   font-size: 1.2rem; 
+  }
+
+.nav-links { width: 100%; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px; }
+
+.nav-links a { font-size: 0.95rem; white-space: nowrap; }
+
+.home-container { margin: 18px auto; }
+
+.ask-box { padding: 14px; }
+
+.posts { padding: 14px; }
+
+.post-title { font-size: 1.05rem; }
+
+.post-desc { font-size: 0.95rem; }
+
+
+.space-card { padding: 10px; }
+}
+
+
+/* Breakpoint 4: very small phones */
+@media (max-width: 400px) {
+.nav-links { gap: 8px; }
+.nav-logo { font-size: 1rem; }
+.post-title { font-size: 1rem; }
+.ask-box textarea { height: 72px; }
+}
+
+
+/* Accessibility / polish */
+a:focus, button:focus, input:focus, textarea:focus { outline: 3px solid rgba(139,255,118,0.12); outline-offset: 2px; }
+
+
+/* small utility */
+.hidden-desktop { display: none; }
+@media (max-width: 900px) { .hidden-desktop { display: inline; } }

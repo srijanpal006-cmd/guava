@@ -1,18 +1,17 @@
-<!-- =======================
-     GUAVA — Profile Page (profile.html)
-     Gen‑Z Dark Theme • Same Design System as Home & Explore
-     ======================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guava — Profile</title>
-  <link rel="stylesheet" href="profile.css" />
+  <link rel="stylesheet" href="../css/profile.css" />
+  
+
+
 </head>
 <body>
 
-  <!-- ================= NAVBAR (Same as Explore & Home) ================= -->
+  <!--  NAVBAR -->
   <nav>
     <div class="nav-logo">GUAVA</div>
 
@@ -24,26 +23,25 @@
       <a href="index.html">Home</a>
       <a href="explore.html">Explore</a>
       <a href="#">Notifications</a>
+      <a href="#">Settings</a>
       <a href="profile.html" style="color:#8BFF76;font-weight:600;">Profile</a>
     </div>
   </nav>
 
-  <!-- ================= PROFILE HEADER ================= -->
+  <!-- PROFILE HEADER -->
   <section class="profile-header">
     <div class="profile-banner"></div>
 
     <div class="profile-info">
-      <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-pic" />
-
-      <h2 class="profile-name">John Doe</h2>
-      <p class="profile-username">@johndoe</p>
+      <h2 class="profile-name">Srijan Pal</h2>
+      <p class="profile-username">@srijanpal</p>
       <p class="profile-bio">Tech enthusiast • AI learner • Sharing knowledge one post at a time.</p>
 
-      <button class="edit-btn">Edit Profile</button>
+      <a id="edit_btn" class="edit-btn" href="edit-profile.html">Edit Profile</a>
     </div>
   </section>
 
-  <!-- ================= PROFILE CONTENT (Left + Right Layout) ================= -->
+  <!--PROFILE CONTENT (Left + Right Layout)  -->
   <section class="profile-main">
 
     <!-- LEFT SECTION — User Details -->
@@ -51,7 +49,7 @@
       <div class="info-card">
         <h3>About</h3>
         <p>Computer Science Student at NST</p>
-        <p>Based in Bangalore, India</p>
+        <p>Based in Sonipat, India</p>
         <p>Joined: March 2025</p>
       </div>
 
@@ -70,7 +68,8 @@
         <ul>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="https://github.com/srijanpal006-cmd" target="_blank" >GitHub</a></li>
+          <li><a href="https://www.instagram.com/srijann06/"target="_blank">Instagram</a></li>
         </ul>
       </div>
     </aside>
@@ -78,7 +77,7 @@
     <!-- RIGHT SECTION — User Posts -->
     <div class="profile-feed">
 
-      <h3 class="feed-title">Posts by John</h3>
+      <h3 class="feed-title">Posts by Srijan</h3>
 
       <div class="post-card">
         <h4 class="post-title">How I started learning AI in college</h4>
@@ -105,6 +104,13 @@
   <footer>
     <p>© 2025 Guava — Designed for minimalism & clarity.</p>
   </footer>
+  <!-- <script>
+    document.querySelector(".edit-btn").addEventListener("click", function () {
+    window.location.href = "edit-profile.html";
+    })
+  </script> -->
+  <script src="../js/profile.js"></script>
+
 
 </body>
 </html>
